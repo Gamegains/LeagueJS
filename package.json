@@ -18,6 +18,7 @@
     "test": "gulp test"
   },
   "main": "lib/LeagueJS.js",
+  "typings": "lib/LeagueJS.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/Colorfulstan/LeagueJS"
