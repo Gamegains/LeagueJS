@@ -753,6 +753,472 @@ declare class leaguejs {
 }
 
 declare namespace leaguejs {
+    class Champion {
+        constructor(...args: any[]);
+
+        gettingById(...args: any[]): void;
+
+        gettingList(...args: any[]): void;
+
+    }
+
+    class ChampionMastery {
+        constructor(...args: any[]);
+
+        gettingBySummoner(...args: any[]): void;
+
+        gettingBySummonerForChampion(...args: any[]): void;
+
+        gettingScoresBySummoner(...args: any[]): void;
+
+    }
+
+    class League {
+        constructor(...args: any[]);
+
+        gettingChallengerLeague(...args: any[]): void;
+
+        gettingLeagueById(...args: any[]): void;
+
+        gettingLeagueForSummonerId(...args: any[]): void;
+
+        gettingMasterLeague(...args: any[]): void;
+
+        gettingPositionsForSummonerId(...args: any[]): void;
+
+    }
+
+    class LolStatus {
+        constructor(...args: any[]);
+
+        gettingShardData(...args: any[]): void;
+
+    }
+
+    class Masteries {
+        constructor(...args: any[]);
+
+        gettingBySummoner(...args: any[]): void;
+
+    }
+
+    class Match {
+        constructor(...args: any[]);
+
+        gettingById(...args: any[]): void;
+
+        gettingByIdForTournament(...args: any[]): void;
+
+        gettingIdsByTournament(...args: any[]): void;
+
+        gettingListByAccount(...args: any[]): void;
+
+        gettingListByAccountWithoutPagination(...args: any[]): void;
+
+        gettingRecentListByAccount(...args: any[]): void;
+
+        gettingTimelineById(...args: any[]): void;
+
+    }
+
+    class Runes {
+        constructor(...args: any[]);
+
+        gettingBySummoner(...args: any[]): void;
+
+    }
+
+    class Spectator {
+        constructor(...args: any[]);
+
+        gettingActiveGame(...args: any[]): void;
+
+        gettingFeaturedGames(...args: any[]): void;
+
+    }
+
+    class StaticData {
+        constructor(...args: any[]);
+
+        gettingChampionById(...args: any[]): void;
+
+        gettingChampions(...args: any[]): void;
+
+        gettingItemById(...args: any[]): void;
+
+        gettingItems(...args: any[]): void;
+
+        gettingLanguageStrings(...args: any[]): void;
+
+        gettingLanguages(...args: any[]): void;
+
+        gettingMaps(...args: any[]): void;
+
+        gettingMasteries(...args: any[]): void;
+
+        gettingMasteryById(...args: any[]): void;
+
+        gettingProfileIcons(...args: any[]): void;
+
+        gettingRealms(...args: any[]): void;
+
+        gettingRunes(...args: any[]): void;
+
+        gettingRunesById(...args: any[]): void;
+
+        gettingSummonerSpells(...args: any[]): void;
+
+        gettingSummonerSpellsById(...args: any[]): void;
+
+        gettingVersions(...args: any[]): void;
+
+    }
+
+    class Summoner {
+        constructor(...args: any[]);
+
+        gettingByAccount(...args: any[]): void;
+
+        gettingById(...args: any[]): void;
+
+        gettingByName(...args: any[]): void;
+
+    }
+
+    class ThirdPartyCode {
+        constructor(...args: any[]);
+
+        gettingBySummoner(...args: any[]): void;
+
+        verifying(...args: any[]): void;
+
+    }
+
+    namespace Champion {
+        namespace prototype {
+            function disableCaching(...args: any[]): void;
+
+            function enableCaching(...args: any[]): void;
+
+            function executingRequest(...args: any[]): void;
+
+            function flushCache(...args: any[]): void;
+
+            function getConfig(...args: any[]): void;
+
+            function gettingById(...args: any[]): void;
+
+            function gettingList(...args: any[]): void;
+
+            function isDebugging(...args: any[]): void;
+
+            function setCache(...args: any[]): void;
+
+        }
+
+    }
+
+    namespace ChampionMastery {
+        namespace prototype {
+            function disableCaching(...args: any[]): void;
+
+            function enableCaching(...args: any[]): void;
+
+            function executingRequest(...args: any[]): void;
+
+            function flushCache(...args: any[]): void;
+
+            function getConfig(...args: any[]): void;
+
+            function gettingBySummoner(...args: any[]): void;
+
+            function gettingBySummonerForChampion(...args: any[]): void;
+
+            function gettingScoresBySummoner(...args: any[]): void;
+
+            function isDebugging(...args: any[]): void;
+
+            function setCache(...args: any[]): void;
+
+        }
+
+    }
+
+    namespace League {
+        namespace prototype {
+            function disableCaching(...args: any[]): void;
+
+            function enableCaching(...args: any[]): void;
+
+            function executingRequest(...args: any[]): void;
+
+            function flushCache(...args: any[]): void;
+
+            function getConfig(...args: any[]): void;
+
+            function gettingChallengerLeague(...args: any[]): void;
+
+            function gettingLeagueById(...args: any[]): void;
+
+            function gettingLeagueForSummonerId(...args: any[]): void;
+
+            function gettingMasterLeague(...args: any[]): void;
+
+            function gettingPositionsForSummonerId(...args: any[]): void;
+
+            function isDebugging(...args: any[]): void;
+
+            function setCache(...args: any[]): void;
+
+        }
+
+    }
+
+    namespace LolStatus {
+        namespace prototype {
+            function disableCaching(...args: any[]): void;
+
+            function enableCaching(...args: any[]): void;
+
+            function executingRequest(...args: any[]): void;
+
+            function flushCache(...args: any[]): void;
+
+            function getConfig(...args: any[]): void;
+
+            function gettingShardData(...args: any[]): void;
+
+            function isDebugging(...args: any[]): void;
+
+            function setCache(...args: any[]): void;
+
+        }
+
+    }
+
+    namespace Masteries {
+        namespace prototype {
+            function disableCaching(...args: any[]): void;
+
+            function enableCaching(...args: any[]): void;
+
+            function executingRequest(...args: any[]): void;
+
+            function flushCache(...args: any[]): void;
+
+            function getConfig(...args: any[]): void;
+
+            function gettingBySummoner(...args: any[]): void;
+
+            function isDebugging(...args: any[]): void;
+
+            function setCache(...args: any[]): void;
+
+        }
+
+    }
+
+    namespace Match {
+        namespace prototype {
+            function disableCaching(...args: any[]): void;
+
+            function enableCaching(...args: any[]): void;
+
+            function executingRequest(...args: any[]): void;
+
+            function flushCache(...args: any[]): void;
+
+            function getConfig(...args: any[]): void;
+
+            function gettingById(...args: any[]): void;
+
+            function gettingByIdForTournament(...args: any[]): void;
+
+            function gettingIdsByTournament(...args: any[]): void;
+
+            function gettingListByAccount(...args: any[]): void;
+
+            function gettingListByAccountWithoutPagination(...args: any[]): void;
+
+            function gettingRecentListByAccount(...args: any[]): void;
+
+            function gettingTimelineById(...args: any[]): void;
+
+            function isDebugging(...args: any[]): void;
+
+            function setCache(...args: any[]): void;
+
+        }
+
+    }
+
+    namespace Runes {
+        namespace prototype {
+            function disableCaching(...args: any[]): void;
+
+            function enableCaching(...args: any[]): void;
+
+            function executingRequest(...args: any[]): void;
+
+            function flushCache(...args: any[]): void;
+
+            function getConfig(...args: any[]): void;
+
+            function gettingBySummoner(...args: any[]): void;
+
+            function isDebugging(...args: any[]): void;
+
+            function setCache(...args: any[]): void;
+
+        }
+
+    }
+
+    namespace Spectator {
+        namespace prototype {
+            function disableCaching(...args: any[]): void;
+
+            function enableCaching(...args: any[]): void;
+
+            function executingRequest(...args: any[]): void;
+
+            function flushCache(...args: any[]): void;
+
+            function getConfig(...args: any[]): void;
+
+            function gettingActiveGame(...args: any[]): void;
+
+            function gettingFeaturedGames(...args: any[]): void;
+
+            function isDebugging(...args: any[]): void;
+
+            function setCache(...args: any[]): void;
+
+        }
+
+    }
+
+    namespace StaticData {
+        namespace prototype {
+            function disableCaching(...args: any[]): void;
+
+            function enableCaching(...args: any[]): void;
+
+            function executingRequest(...args: any[]): void;
+
+            function flushCache(...args: any[]): void;
+
+            function getConfig(...args: any[]): void;
+
+            function gettingChampionById(...args: any[]): void;
+
+            function gettingChampions(...args: any[]): void;
+
+            function gettingItemById(...args: any[]): void;
+
+            function gettingItems(...args: any[]): void;
+
+            function gettingLanguageStrings(...args: any[]): void;
+
+            function gettingLanguages(...args: any[]): void;
+
+            function gettingMaps(...args: any[]): void;
+
+            function gettingMasteries(...args: any[]): void;
+
+            function gettingMasteryById(...args: any[]): void;
+
+            function gettingProfileIcons(...args: any[]): void;
+
+            function gettingRealms(...args: any[]): void;
+
+            function gettingRunes(...args: any[]): void;
+
+            function gettingRunesById(...args: any[]): void;
+
+            function gettingSummonerSpells(...args: any[]): void;
+
+            function gettingSummonerSpellsById(...args: any[]): void;
+
+            function gettingVersions(...args: any[]): void;
+
+            function isDebugging(...args: any[]): void;
+
+            function setCache(...args: any[]): void;
+
+        }
+
+    }
+
+    namespace Summoner {
+        namespace prototype {
+            function disableCaching(...args: any[]): void;
+
+            function enableCaching(...args: any[]): void;
+
+            function executingRequest(...args: any[]): void;
+
+            function flushCache(...args: any[]): void;
+
+            function getConfig(...args: any[]): void;
+
+            function gettingByAccount(...args: any[]): void;
+
+            function gettingById(...args: any[]): void;
+
+            function gettingByName(...args: any[]): void;
+
+            function isDebugging(...args: any[]): void;
+
+            function setCache(...args: any[]): void;
+
+        }
+
+    }
+
+    namespace ThirdPartyCode {
+        namespace prototype {
+            function disableCaching(...args: any[]): void;
+
+            function enableCaching(...args: any[]): void;
+
+            function executingRequest(...args: any[]): void;
+
+            function flushCache(...args: any[]): void;
+
+            function getConfig(...args: any[]): void;
+
+            function gettingBySummoner(...args: any[]): void;
+
+            function isDebugging(...args: any[]): void;
+
+            function setCache(...args: any[]): void;
+
+            function verifying(...args: any[]): void;
+
+        }
+
+    }
+
+    namespace prototype {
+        function disableCaching(...args: any[]): void;
+
+        function enableCaching(...args: any[]): void;
+
+        function flushCache(...args: any[]): void;
+
+        function getConfig(...args: any[]): void;
+
+        function getRateLimits(...args: any[]): void;
+
+        function setCache(...args: any[]): void;
+
+        function setRateLimit(...args: any[]): void;
+
+        function updateRateLimiter(...args: any[]): void;
+
+    }
+
     namespace util {
         function ChampionUtil(...args: any[]): any;
 
