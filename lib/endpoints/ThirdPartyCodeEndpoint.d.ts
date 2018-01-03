@@ -1,4 +1,6 @@
-export declare class ThirdPartyCodeEndpoint {
+import Endpoint from '../Endpoint';
+
+export declare class ThirdPartyCodeEndpoint extends Endpoint {
     constructor(...args: any[]);
 
     gettingBySummoner(...args: any[]): void;

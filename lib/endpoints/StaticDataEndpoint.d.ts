@@ -1,4 +1,6 @@
-export declare class StaticDataEndpoint {
+import Endpoint from '../Endpoint';
+
+export declare class StaticDataEndpoint extends Endpoint {
     constructor(...args: any[]);
 
     gettingChampionById(...args: any[]): void;

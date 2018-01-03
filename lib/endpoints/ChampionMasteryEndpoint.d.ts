@@ -1,4 +1,6 @@
-export declare class ChampionMasteryEndpoint {
+import Endpoint from '../Endpoint';
+
+export declare class ChampionMasteryEndpoint extends Endpoint {
     constructor(...args: any[]);
 
     gettingBySummoner(...args: any[]): void;

@@ -1,4 +1,6 @@
-export declare class MatchEndpoint {
+import Endpoint from '../Endpoint';
+
+export declare class MatchEndpoint extends Endpoint {
     constructor(...args: any[]);
 
     gettingById(...args: any[]): void;

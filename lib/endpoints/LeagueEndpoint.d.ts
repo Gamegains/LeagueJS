@@ -1,4 +1,6 @@
-export declare class LeagueEndpoint {
+import Endpoint from '../Endpoint';
+
+export declare class LeagueEndpoint extends Endpoint {
     constructor(...args: any[]);
 
     gettingChallengerLeague(...args: any[]): void;

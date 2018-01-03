@@ -1,4 +1,6 @@
-export declare class SummonerEndpoint {
+import Endpoint from '../Endpoint';
+
+export declare class SummonerEndpoint extends Endpoint {
     constructor(...args: any[]);
 
     gettingByAccount(...args: any[]): void;
