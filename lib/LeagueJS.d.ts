@@ -753,25 +753,6 @@ declare class leaguejs {
 }
 
 declare namespace leaguejs {
-    namespace prototype {
-        function disableCaching(...args: any[]): void;
-
-        function enableCaching(...args: any[]): void;
-
-        function flushCache(...args: any[]): void;
-
-        function getConfig(...args: any[]): void;
-
-        function getRateLimits(...args: any[]): void;
-
-        function setCache(...args: any[]): void;
-
-        function setRateLimit(...args: any[]): void;
-
-        function updateRateLimiter(...args: any[]): void;
-
-    }
-
     namespace util {
         function ChampionUtil(...args: any[]): any;
 
