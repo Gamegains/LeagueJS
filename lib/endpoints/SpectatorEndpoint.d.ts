@@ -1,4 +1,4 @@
-import Endpoint from '../Endpoint';
+import {Endpoint} from '../Endpoint';
 
 export declare class SpectatorEndpoint extends Endpoint {
     constructor(...args: any[]);
